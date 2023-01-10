@@ -1,19 +1,19 @@
 import { Header } from "./components/Header"
 import { Post } from "./Post"
-import './global.css'
+import './global.scss'
+import styles from './App.module.scss'
+import { Sidebar } from "./components/Sidebar"
 
 function App() {
   return (
     <>
     <Header />
-      <Post
-        author="Diego"
-        content="lorem10"
-      />
-      <Post
-        author="Teste"
-        content="Tes111"
-      />
+    <div className={styles.wrapper}>
+      <Sidebar />
+      <main>
+        <Post author="alo" content="alo" />
+      </main>
+    </div>
     </>
   )
 }
