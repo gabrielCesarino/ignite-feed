@@ -3,18 +3,18 @@ import ProfileImg from '../assets/profile.jpeg'
 import { Comment } from './Comment';
 import { Avatar } from './Avatar';
 
-export function Post () {
+export function Post ({ author, content, publishedAt}) {
     return (
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <Avatar src={ProfileImg} />
+                    <Avatar src={author.avatarUrl} />
                     <div className={styles.authorInfo}>
-                        <strong>Gabriel Cesarino</strong>
-                        <span>Full Stack Developer</span>
+                        <strong>{author.name}</strong>
+                        <span>{author.role}</span>
                     </div>
                 </div>
-                <time dateTime='2023-01-01 08:12:59' title='1 de Janeiro às 8:12h'>
+                <time dateTime={publishedAt} title={publishedAt}>
                     Publicado há 1h
                 </time>
             </header>
