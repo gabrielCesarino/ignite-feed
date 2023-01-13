@@ -16,7 +16,7 @@ const posts = [
     content: [
       {type: 'paragraph', content: 'Fala galera 👋'},
       {type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifólio'},
-      {type: 'link', content: '👉{" "}<a href="#">checkout.com</a>'}
+      {type: 'link', content: '👉 checkout.com'}
     ],
     publishedAt: new Date('2023-01-13 20:00:00')
   },
@@ -30,7 +30,7 @@ const posts = [
     content: [
       {type: 'paragraph', content: 'Fala galera 👋'},
       {type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifólio'},
-      {type: 'link', content: '👉{" "}<a href="#">checkout.com</a>'}
+      {type: 'link', content: '👉 checkout.com'}
     ],
     publishedAt: new Date('2023-01-10 20:00:00')
   },
@@ -47,7 +47,7 @@ function App() {
             <Post
               key={post.id}
               author={post.author}
-              content={post.author}
+              content={post.content}
               publishedAt={post.publishedAt}
             />
           ))}
