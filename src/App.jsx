@@ -15,7 +15,7 @@ const posts = [
     },
     content: [
       {type: 'paragraph', content: 'Fala galera 👋'},
-      {type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifólio'},
+      {type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portfólio'},
       {type: 'link', content: '👉 checkout.com'}
     ],
     publishedAt: new Date('2023-01-13 20:00:00')
